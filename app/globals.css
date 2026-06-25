@@ -3,8 +3,8 @@
 @variant dark (&:is(.dark, .dark *));
 
 @theme {
-  --color-ink: #F9F7F4;
-  --color-line: #E5E2DD;
+  --color-ink: #0D1117;
+  --color-line: #2A2F3A;
 }
 
 .dark {
