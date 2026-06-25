@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { ThemeColor } from "@/components/ThemeColor";
 
 // Configuracion de la fuente
 const inter = Inter({
@@ -24,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-ink">
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <ThemeColor />
           {children}
         </ThemeProvider>
       </body>
