@@ -13,10 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Marco Cruz | Frontend Developer",
   description: "Frontend developer & Mechatronics Engineer. I build fast, accessible and intentional web products — from database to pixel.",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F9F7F4" },
-    { media: "(prefers-color-scheme: dark)", color: "#0D1117" },
-  ],
+  themeColor: "#F9F7F4",
 };
 
 export default function RootLayout({
