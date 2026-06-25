@@ -24,8 +24,7 @@ export default function ProjectCard({ status, title, description, techs, image, 
     const statusProject = statusConfig[status];
 
     return (
-        <div className="group rounded-2xl border border-zinc-200 dark:border-zinc-900 bg-zinc-50 dark:bg-zinc-950 overflow-hidden hover:border-zinc-300 dark:hover:border-zinc-800 transition-colors">
-            {/* Image */}
+<div className="group rounded-2xl border border-line bg-white dark:bg-white/5 overflow-hidden hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">            {/* Image */}
             <div className="overflow-hidden h-48 bg-zinc-50 dark:bg-zinc-800/50">
                 <img
                     src={image}

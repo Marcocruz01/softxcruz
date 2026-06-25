@@ -20,7 +20,7 @@ export default function Stack() {
             </h3>
             <ul className="mt-3 flex flex-wrap gap-2">
               {items.map((item) => (
-                <li key={item} className="rounded-full border border-line px-3 py-1 text-sm text-zinc-600 dark:text-zinc-400">
+                <li key={item} className="rounded-full border border-line px-3 py-1 text-sm text-zinc-500 dark:text-zinc-500 hover:bg-zinc-500/10 hover:text-zinc-900 dark:hover:text-zinc-200 cursor-pointer">
                   {item}
                 </li>
               ))}

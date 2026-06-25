@@ -64,7 +64,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 placeholder="Enter your name..."
-                                className="px-4 py-2 rounded-xl bg-stone-200 dark:bg-zinc-950 border border-stone-300 dark:border-zinc-900 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-line transition-colors"
+                                className="px-4 py-2 rounded-lg bg-white dark:bg-white/5 border border-stone-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
                             />
                         </div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 placeholder="hello@example.com"
-                                className="px-4 py-2 rounded-xl bg-stone-200 dark:bg-zinc-950 border border-stone-300 dark:border-zinc-900 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-line transition-colors"
+                                className="px-4 py-2 rounded-lg bg-white dark:bg-white/5 border border-stone-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors"
                             />
                         </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
                             <textarea
                                 rows={5}
                                 placeholder="Tell me about your project..."
-                                className="px-4 py-2 rounded-xl bg-stone-200 dark:bg-zinc-950 border border-stone-300 dark:border-zinc-900 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-line transition-colors resize-none"
+                                className="px-4 py-2 rounded-lg bg-white dark:bg-white/5 border border-stone-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-400 dark:focus:border-zinc-600 transition-colors resize-none"
                             />
                         </div>
 
