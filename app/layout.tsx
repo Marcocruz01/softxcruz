@@ -23,15 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
-      <head>
-        <meta name="theme-color" content="#F9F7F4" />
-      </head>
       <body className="min-h-full flex flex-col bg-ink">
         <ThemeProvider attribute="class" defaultTheme="light">
           <ThemeColor />
           {children}
         </ThemeProvider>
       </body>
-    </html>
+    </html> 
   );
 }
