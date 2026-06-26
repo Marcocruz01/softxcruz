@@ -20,7 +20,7 @@ export default function About() {
                     {/* Left — bio */}
                     <div className="flex flex-col gap-4 text-base text-zinc-500 dark:text-zinc-400 leading-relaxed">
                         <p>
-                            I'm a Mechatronics Engineer and Software Development Technologist — a combination that taught me to think in systems, not just in code.
+                            Hi, I'm Marco Antonio Cruz López, a 24-year-old Mechatronics Engineer and Software Development Technologist — a combination that taught me to think in systems, not just in code.
                         </p>
                         <p>
                             Self-taught on the web side, with around 1.5 years of hands-on experience building web applications — and 6 months working professionally as a Test Engineer, where I developed a sharp eye for how software should behave.
@@ -45,7 +45,7 @@ export default function About() {
                             },
                             {
                                 label: "Experience",
-                                value: "6 months as QA Engineer. 1.5 years building full stack projects.",
+                                value: "6 months as Test Engineer at Foxconn. 1.5 years building full stack projects.",
                             },
                             {
                                 label: "Focus",
@@ -53,7 +53,7 @@ export default function About() {
                             },
                             {
                                 label: "Goal",
-                                value: "Land my first role as a web developer and build products people truly trust and use.",
+                                value: "I will continue practicing, learning, and improving every day so I can become a web developer at a large company.",
                             },
                         ].map((item) => (
                             <div key={item.label} className="flex flex-col gap-1 border-b border-line pb-4">
