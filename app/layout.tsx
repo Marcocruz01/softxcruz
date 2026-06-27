@@ -29,8 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col bg-line dark:bg-ink text-ink dark:text-line transition-colors duration-300">
-        <ThemeProvider attribute="class" defaultTheme="system">
+      <body className="min-h-screen flex flex-col bg-ink transition-colors duration-300 antialiased">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
       </body>

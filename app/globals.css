@@ -3,22 +3,48 @@
 @variant dark (&:is(.dark, .dark *));
 
 @theme {
-  --color-ink: #0D1117;
-  --color-line: #2A2F3A;
+  /* 
+    Registramos las variables en el tema de Tailwind v4.
+    Apuntamos a variables CSS nativas que cambiarán de valor según la clase (.dark o .light).
+  */
+  --color-ink: var(--ink-bg);
+  --color-line: var(--line-border);
+  --color-text: var(--text-color);
 }
 
+/* ==========================================
+   CONFIGURACIÓN DE TEMAS (Variables Dinámicas)
+   ========================================== */
+
+/* Por defecto (si no hay clase, asumimos Light o el default de tu app) */
+:root, .light {
+  --ink-bg: #F9F7F4;      
+  --line-border: #E5E2DD; 
+  --text-color: #0D1117;   
+  
+  /* Scrollbar valores light */
+  --scrollbar-thumb: #cbc9c5;
+  --scrollbar-thumb-hover: #a4a3a2;
+}
+
+/* Cuando se activa el modo oscuro */
 .dark {
-  --color-ink: #0D1117;
-  --color-line: #2A2F3A;
+  --ink-bg: #0D1117;      
+  --line-border: #2A2F3A; 
+  --text-color: #F9F7F4;   
+  
+  /* Scrollbar valores dark */
+  --scrollbar-thumb: #2b3039;
+  --scrollbar-thumb-hover: #39404c;
 }
 
-.light {
-  --color-ink: #F9F7F4;
-  --color-line: #E5E2DD;
-}
+/* ==========================================
+   ESTILOS BASE Y ANIMACIONES
+   ========================================== */
 
 body {
-  @apply bg-ink;
+  /* Mantiene tu fondo base usando la variable que ahora sí cambia */
+  @apply bg-ink text-[var(--color-text)] antialiased;
 }
 
 @keyframes marquee {
@@ -30,7 +56,9 @@ body {
   animation: marquee 20s linear infinite;
 }
 
-/* Scrollbar */
+/* ==========================================
+   SCROLLBAR OPTIMIZADO (Sin duplicar código)
+   ========================================== */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -41,24 +69,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
+  background: var(--scrollbar-thumb);
 }
 
-/* Dark */
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: #39404c !important;
-}
-
-/* Light */
-.light ::-webkit-scrollbar-thumb:hover {
-  background: #a4a3a2 !important;
-}
-
-/* Dark */
-.dark ::-webkit-scrollbar-thumb {
-  background: #2b3039;
-}
-
-/* Light */
-.light ::-webkit-scrollbar-thumb {
-  background: #cbc9c5;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover) !important;
 }
