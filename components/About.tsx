@@ -67,7 +67,7 @@ export default function About() {
                         ))}
                         {/* Download CV */}
                         <a
-                            href="/CV_MARCO_ANTONIO_CRUZ_LOPEZ.pdf"
+                            href="/CV_MARCO_ANTONIO_CRUZ_LÓPEZ.pdf"
                             download
                             className="group mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-line text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-900/5 dark:hover:bg-zinc-500/10 transition-colors w-fit"
                         >
