@@ -17,7 +17,7 @@ export default function Projects() {
                 Selected work
             </p>
             <h2 className="mt-2 text-3xl font-semibold text-zinc-900 dark:text-zinc-200">
-                Projects I&apos;m proud of — built with intention, shipped with care.
+                Projects I'm proud of — built with intention, shipped with care.
             </h2>
             <p className="mt-3 text-base text-zinc-500 dark:text-zinc-400 max-w-2xl">
                 Full stack development from day one. All projects here encompass the backend, the frontend, and even the smallest resource and detail receive time and effort.

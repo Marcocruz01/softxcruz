@@ -44,11 +44,11 @@ export default function Contact() {
                             Contact
                         </p>
                         <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                            Let&apos;s build something<br />together
+                            Let's build something<br />together
                         </h2>
                     </div>
                     <p className="text-base text-zinc-500 dark:text-zinc-400 max-w-xl">
-                        Do you have a project in mind or want to automate your business? I&apos;m always open to new opportunities and interesting conversations.
+                        Do you have a project in mind or want to automate your business? I'm always open to new opportunities and interesting conversations.
                     </p>
                 </div>
 

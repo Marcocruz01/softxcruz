@@ -61,12 +61,9 @@ export default function Hero() {
         }
 
         if (deleting && displayed.length === 0) {
-            // Next word — CORRECCIÓN DE LINT: Envolver el set en una macrotarea diferida
-            const timeout = setTimeout(() => {
-                setDeleting(false);
-                setIndex((prev) => (prev + 1) % words.length);
-            }, 0);
-            return () => clearTimeout(timeout);
+            // Next word
+            setDeleting(false);
+            setIndex((prev) => (prev + 1) % words.length);
         }
     }, [displayed, deleting, index]);
 

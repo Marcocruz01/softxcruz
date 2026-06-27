@@ -8,8 +8,8 @@ export function ThemeSwitch() {
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
+    // Evita hydration mismatch
     useEffect(() => setMounted(true), []);
-    
     if (!mounted) return <div className="size-6" />;
 
     return (

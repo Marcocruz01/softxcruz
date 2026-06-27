@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { ThemeWatcher } from "@/components/ThemeWatcher";
 
 // Configuracion de la fuente
 const inter = Inter({
@@ -23,9 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col bg-ink transition-colors duration-300 antialiased">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ThemeWatcher />
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
       </body>
