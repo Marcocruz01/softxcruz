@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   description: "Frontend developer & Mechatronics Engineer. I build fast, accessible and intentional web products — from database to pixel.",
 };
 
+export const viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F9F7F4' },
+    { media: '(prefers-color-scheme: dark)', color: '#0D1117' },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,8 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark">
+      <body className="min-h-screen flex flex-col bg-line dark:bg-ink text-ink dark:text-line transition-colors duration-300">
+        <ThemeProvider attribute="class" defaultTheme="system">
           {children}
         </ThemeProvider>
       </body>
