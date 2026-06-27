@@ -20,19 +20,19 @@ export default function About() {
                     {/* Left — bio */}
                     <div className="flex flex-col gap-4 text-base text-zinc-500 dark:text-zinc-400 leading-relaxed">
                         <p>
-                            Hi, I'm Marco Antonio Cruz López, a 24-year-old Mechatronics Engineer and Software Development Technologist — a combination that taught me to think in systems, not just in code.
+                            Hi, I'm <span className="font-semibold text-zinc-900 dark:text-zinc-100">Marco Antonio Cruz López</span>, a 24-year-old Mechatronics Engineer and Software Development Technologist — a combination that taught me to <span className="font-semibold text-zinc-900 dark:text-zinc-100">think in complete systems</span>, not just in isolated code.
                         </p>
                         <p>
-                            Self-taught on the web side, with around 1.5 years of hands-on experience building web applications — and 6 months working professionally as a Test Engineer, where I developed a sharp eye for how software should behave.
+                            With 1.5 years of experience building web applications and 6 months working professionally as a <span className="font-semibold text-zinc-900 dark:text-zinc-100">Test Engineer</span>, I have developed a sharp eye for quality. I don’t just build websites; I ensure they are <span className="font-semibold text-zinc-900 dark:text-zinc-100">reliable, secure, and behave exactly as your business needs</span>.
                         </p>
                         <p>
-                            That mix of engineering, testing, and development gives me a different perspective: I don't just write code, I think about how it breaks, how it scales, and how the end user experiences it.
+                            That unique mix of engineering, rigorous testing, and web development gives me a different perspective. I design <span className="font-semibold text-zinc-900 dark:text-zinc-100">scalable digital solutions</span> while keeping a flawless end-user experience in mind.
                         </p>
                         <p>
-                            I'm driven by one thing — automating what's manual and making people's workflows faster and smarter. If a task can be optimized, I'll find a way to do it.
+                            I am driven by efficiency — <span className="font-semibold text-zinc-900 dark:text-zinc-100">automating manual tasks</span> and making workflows faster and smarter. If your business has a process that can be optimized or a digital product that needs to be built from scratch, I’ll find the best way to do it.
                         </p>
                         <p>
-                            My goal is to land my first role as a web developer and keep growing into a full stack engineer who ships products that actually make a difference.
+                            My goal is to <span className="font-semibold text-zinc-900 dark:text-zinc-100">help businesses transform their ideas into high-performing web applications</span>, while continuously growing into a Full Stack Engineer who ships products that make a real difference.
                         </p>
                     </div>
 

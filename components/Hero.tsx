@@ -94,8 +94,8 @@ export default function Hero() {
                 <span className="animate-pulse text-orange-400">|</span>
             </p>
             {/* description */}
-            <p className="mt-6 text-base text-zinc-400 max-w-lg">
-                I strive to ensure that every detail works correctly. Interfaces that not only look good — but feel good too.
+            <p className="mt-6 text-base text-zinc-400 max-w-xl">
+                I bridge the gap between robust engineering and exceptional UX—building thoroughly tested, high-performance web applications.
             </p>
             {/* Buttons to contact */}
             <div className="mt-8 flex items-center gap-4">
