@@ -8,24 +8,8 @@ export type Project = {
     href?: string;
 }
 
-// Datos
+// Datos de los proyectos
 export const projects: Project[] = [
-    {
-        status: "completed",
-        title: "BrewKoffee - Sistema de órdenes",
-        description: "Sistema de gestión de órdenes para cafeterías, con panel de administración y seguimiento en tiempo real para los meseros y el cocinero.",
-        techs: ["Next.js", "TypeScript", "Tailwind CSS", "MVC", "Prisma", "Node.js", "PostgreSQL"],
-        image: "/brewkoffee.png",
-        href: "#",
-    },
-    {
-        status: "completed",
-        title: "SleekDev - Administrador financiero",
-        description: "Panel moderno todo en uno para administrar tareas, proeyctos, actividades, listas de tareas pendientes, ingresos, gastos y ahorros en un solo lugar.",
-        techs: ["React.js", "TypeScript", "Tailwind CSS", "MVC", "Node.js", "MongoDB"],
-        image: "/sleekdev.png",
-        href: "https://sleekdev-mc.netlify.app",
-    }, 
     {
         status: "completed",
         title: "Techsy - Carrito de compras",
